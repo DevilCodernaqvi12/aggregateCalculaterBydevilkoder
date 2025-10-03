@@ -1,0 +1,317 @@
+		body {
+			background: #F8FAFC;
+			font-family: 'Inter', Arial, sans-serif;
+			color: #0F172A;
+			margin: 0;
+		}
+		.header {
+			position: sticky;
+			top: 0;
+			background: #fff;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0.75rem 2rem;
+			z-index: 10;
+		}
+		.logo {
+			display: flex;
+			align-items: center;
+			font-weight: 700;
+			font-size: 1.3rem;
+			color: #0EA5A4;
+		}
+		.logo-icon {
+			font-size: 1.7rem;
+			margin-right: 0.5rem;
+		}
+		.nav {
+			display: flex;
+			gap: 1.5rem;
+		}
+		.nav a {
+			text-decoration: none;
+			color: #0F172A;
+			font-weight: 500;
+			transition: color 0.2s;
+		}
+		.nav a:hover {
+			color: #0EA5A4;
+		}
+		.hero {
+			text-align: center;
+			margin: 2.5rem 0 1.5rem 0;
+		}
+		.hero-headline {
+			font-size: 2.2rem;
+			font-weight: 700;
+			margin-bottom: 0.7rem;
+		}
+		.hero-subtext {
+			font-size: 1.1rem;
+			color: #334155;
+		}
+		.main-content {
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			gap: 2rem;
+			flex-wrap: wrap;
+			margin-bottom: 2rem;
+		}
+		.calculator-card {
+			background: #fff;
+			border-radius: 1.2rem;
+			box-shadow: 0 4px 24px rgba(14,165,164,0.08);
+			padding: 2rem 2.2rem 1.5rem 2.2rem;
+			max-width: 400px;
+			width: 100%;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.inputs-row {
+			display: flex;
+			gap: 1rem;
+			width: 100%;
+		}
+		.input-group {
+			display: flex;
+			align-items: center;
+			background: #F8FAFC;
+			border-radius: 0.7rem;
+			padding: 0.5rem 0.8rem;
+			flex: 1;
+		}
+		.input-icon {
+			font-size: 1.3rem;
+			margin-right: 0.5rem;
+		}
+		.input-group input {
+			border: none;
+			background: transparent;
+			font-size: 1rem;
+			width: 100%;
+			outline: none;
+			color: #0F172A;
+		}
+		.calc-btn {
+			background: #0EA5A4;
+			color: #fff;
+			font-size: 1.2rem;
+			font-weight: 700;
+			border: none;
+			border-radius: 0.7rem;
+			padding: 0.9rem 0;
+			width: 100%;
+			margin: 1.2rem 0 0.5rem 0;
+			cursor: pointer;
+			box-shadow: 0 2px 8px rgba(14,165,164,0.08);
+			transition: background 0.2s;
+		}
+		.calc-btn:hover {
+			background: #0F172A;
+		}
+		.ad-placeholder {
+			width: 100%;
+			height: 60px;
+			background: #e2e8f0;
+			border-radius: 0.5rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #64748b;
+			font-size: 1rem;
+			margin: 0.7rem 0 0.2rem 0;
+		}
+		.side-ad {
+			min-width: 300px;
+			min-height: 250px;
+			background: #e2e8f0;
+			border-radius: 1rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #64748b;
+			font-size: 1.1rem;
+		}
+		.result-card {
+			background: #fff;
+			border-radius: 1.2rem;
+			box-shadow: 0 4px 24px rgba(14,165,164,0.10);
+			padding: 1.5rem 2rem;
+			max-width: 600px;
+			width: 100%;
+			margin: 2rem auto 0 auto;
+			text-align: center;
+			display: none;
+			flex-direction: column;
+			align-items: center;
+		}
+		.result-percentage {
+			font-size: 2.3rem;
+			font-weight: 700;
+			color: #0EA5A4;
+			margin-bottom: 0.7rem;
+		}
+		.result-breakdown {
+			font-size: 1.1rem;
+			color: #334155;
+			margin-bottom: 1rem;
+		}
+		.result-cta {
+			background: #22c55e;
+			color: #fff;
+			font-weight: 700;
+			border: none;
+			border-radius: 0.7rem;
+			padding: 0.7rem 1.2rem;
+			font-size: 1.1rem;
+			cursor: pointer;
+			margin-bottom: 0.7rem;
+		}
+		.result-actions {
+			display: flex;
+			gap: 1rem;
+			justify-content: center;
+			margin-bottom: 0.7rem;
+		}
+		.result-actions button {
+			background: #0EA5A4;
+			color: #fff;
+			border: none;
+			border-radius: 0.5rem;
+			padding: 0.5rem 1rem;
+			font-size: 1rem;
+			cursor: pointer;
+		}
+		.result-ad {
+			width: 100%;
+			height: 50px;
+			background: #e2e8f0;
+			border-radius: 0.5rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #64748b;
+			font-size: 1rem;
+			margin-top: 0.7rem;
+		}
+		.progress-bar {
+			width: 100%;
+			height: 7px;
+			background: #e2e8f0;
+			border-radius: 4px;
+			overflow: hidden;
+			margin: 1rem 0 0.5rem 0;
+			display: none;
+		}
+		.progress-bar-inner {
+			height: 100%;
+			width: 0;
+			background: #0EA5A4;
+			transition: width 1.2s cubic-bezier(.4,0,.2,1);
+		}
+		@media (max-width: 900px) {
+			.main-content {
+				flex-direction: column;
+				align-items: center;
+			}
+			.side-ad {
+				margin-top: 1.5rem;
+			}
+		}
+		@media (max-width: 600px) {
+			.inputs-row {
+				flex-direction: column;
+				gap: 0.7rem;
+			}
+			.calculator-card {
+				padding: 1.2rem 0.7rem 1rem 0.7rem;
+			}
+			.result-card {
+				padding: 1rem 0.5rem;
+			}
+			.calc-btn {
+				font-size: 1rem;
+				padding: 0.7rem 0;
+			}
+		}
+
+		/* Footer styles */
+		.site-footer {
+			background: #0F172A;
+			color: #E6F6F5;
+			padding: 2rem 1.5rem 1.2rem 1.5rem;
+			margin-top: 2.2rem;
+		}
+		.footer-inner {
+			max-width: 1100px;
+			margin: 0 auto;
+			display: flex;
+			gap: 2rem;
+			flex-wrap: wrap;
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+		.footer-brand {
+			min-width: 220px;
+		}
+		.footer-brand .logo {
+			color: #E6F6F5;
+			font-weight: 700;
+			font-size: 1.05rem;
+			margin-bottom: 0.4rem;
+		}
+		.footer-desc {
+			color: #cbd5e1;
+			max-width: 360px;
+			margin-bottom: 0.6rem;
+			font-size: 0.95rem;
+		}
+		.socials a {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 36px;
+			height: 36px;
+			border-radius: 8px;
+			background: rgba(255,255,255,0.04);
+			color: #fff;
+			margin-right: 0.5rem;
+			text-decoration: none;
+			font-size: 0.95rem;
+		}
+		.footer-links, .footer-resources {
+			display: flex;
+			flex-direction: column;
+			min-width: 140px;
+		}
+		.footer-links h4, .footer-resources h4 {
+			margin: 0 0 0.6rem 0;
+			font-size: 0.95rem;
+			color: #fff;
+		}
+		.footer-links a, .footer-resources a {
+			color: #cbd5e1;
+			text-decoration: none;
+			margin-bottom: 0.45rem;
+			font-size: 0.95rem;
+		}
+		.footer-links a:hover, .footer-resources a:hover { color: #0EA5A4; }
+		.footer-bottom {
+			max-width: 1100px;
+			margin: 1.1rem auto 0 auto;
+			text-align: center;
+			font-size: 0.9rem;
+			color: #94a3b8;
+			padding-top: 0.8rem;
+			border-top: 1px solid rgba(255,255,255,0.03);
+		}
+
+		@media (max-width: 700px) {
+			.footer-inner { flex-direction: column; gap: 1rem; }
+			.footer-links, .footer-resources { flex-direction: row; gap: 1rem; }
+		}
